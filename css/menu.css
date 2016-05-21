@@ -71,6 +71,10 @@ section {
     margin-left: 5px;
 }
 
+.hide {
+	display: none;
+}
+
 .comNav ul li {
     list-style: none;
     height: 16px;
