@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background: #519d9e;
+}
+
+.center_wrap {
+    width: 960px;
+    margin: 0 auto;
+    background: #9dc8c8;
+}
+
+.content {
+    width: 90%;
+    height: 800px;
+    margin: 0px auto;
+}
+
+section {
+    margin: 30px auto 50px auto;
+    width: 80%;
+    height: 350px;
+    border: 2px solid;
+}
+
