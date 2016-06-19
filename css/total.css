@@ -31,3 +31,32 @@ section {
     border: 2px solid;
 }
 
+table {
+    margin: 50px auto 20px auto;
+}
+
+.total {
+    margin-left: 55%;
+}
+
+.total span:nth-child(2) {
+    display:inline-block;
+    width:40px;
+    border-bottom: 1px solid;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label{
+    cursor: pointer;
+    display: inline-block;
+}
+
+input[type="radio"]:checked + label{
+   
+    
+    border: 2px solid #fff;
+    border-radius: 99em;
+}

@@ -11,15 +11,21 @@
 </head>
 
 <body>
-    <div class="center_wrap">
+    <div class="center-wrap">
+        <button id="nav-btn" class="nav-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <header>
-            <nav class="comNav">
-                <ul id='0' class="com ">
+            <div class="logo"></div>
+            <nav class="com-nav">
+                <ul id='0' class="com " data-layer="0">
                     <li><a href="">1-1</a></li>
                     <li><a href="">2-1</a></li>
                     <li><a href="">3-1</a></li>
                 </ul>
-                <ul id='0_1' class="com hide">
+                <ul id='0_1' class="com hide" data-layer="0_1">
                     <li><a href="">2-a</a></li>
                     <li><a href="">2-b</a></li>
                     <li><a href="">2-c</a></li>
@@ -28,17 +34,17 @@
                     <li><a href="">2-f</a></li>
                     <li><a href="">2-g</a></li>
                 </ul>
-                <ul id='0_1_0' class="com hide">
+                <ul id='0_1_0' class="com hide" data-layer="0_1_0">
                     <li><a href="">a-1</a></li>
                     <li><a href="">a-2</a></li>
                     <li><a href="">a-3</a></li>
                 </ul>
-                <ul id='0_1_1' class="com hide">
+                <ul id='0_1_1' class="com hide" data-layer="0_1_1">
                     <li><a href="">b-1</a></li>
                     <li><a href="">b-2</a></li>
                     <li><a href="">b-3</a></li>
                 </ul>
-                <ul id='0_1_2' class="com hide">
+                <ul id='0_1_2' class="com hide" data-layer="0_1_2">
                     <li><a href="">c-1</a></li>
                     <li><a href="">c-2</a></li>
                     <li><a href="">c-3</a></li>
@@ -58,14 +64,20 @@
                 <div class="line"></div>
             </section>
         </div>
-        <nav class="mobNav">
-            <ul class="mob-A">
-                <li class="mob-A-1">
-                    <a href="">a-1</a>
-                    <ul class="mob-B-1">
+        <nav class="mob-nav">
+            <ul class="mob-a">
+                <li>
+                    <a href="">a-1
+                        <span class="off">+</span>
+                        <span class="on">-</span>
+                    </a>
+                    <ul class="mob-b">
                         <li>
-                            <a href="">b-1</a>
-                            <ul class="mob-B-1-sub">
+                            <a href="">b-1
+                                <span class="off">+</span>
+                                <span class="on">-</span>
+                            </a>
+                            <ul class="mob-c">
                                 <li>
                                     <a href="">c-1</a>
                                 </li>
@@ -78,34 +90,53 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="">b-2</a>
+                            <a href="">b-2
+                            </a>
                         </li>
                         <li>
-                            <a href="">b-3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mob-A-2">
-                    <a href="">a-2</a>
-                    <ul class="mob-B-2">
-                        <li>
-                            <a href="">b-4</a>
-                            <ul class="mob-B-2-sub">
-                                <li class=""><a href="">c-4</a></li>
-                                <li class=""><a href="">c-5</a></li>
-                                <li class=""><a href="">c-6</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="">b-5</a>
-                        </li>
-                        <li>
-                            <a href="">b-6</a>
+                            <a href="">b-3
+                            </a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="">a-3</a>
+                    <a href="">a-2
+                        <span class="off">+</span>
+                        <span class="on">-</span>
+                    </a>
+                    <ul class="mob-b">
+                        <li>
+                            <a href="">b-4
+                                <span class="off">+</span>
+                                <span class="on">-</span>
+                            </a>
+                            <ul class="mob-c">
+                                <li><a href="">c-4</a></li>
+                                <li><a href="">c-5</a></li>
+                                <li><a href="">c-6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">b-5
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">b-6
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">a-3
+                    </a>
+                </li>
+                <li>
+                    <a href="">a-4
+                    </a>
+                </li>
+                <li>
+                    <a href="">a-5
+                    </a>
                 </li>
             </ul>
         </nav>

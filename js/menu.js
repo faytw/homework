@@ -26,14 +26,48 @@ $(document)
         var $this = $(this);
         var $layer = $this.parent().attr('id');
         var $index_val = $('#' + $layer + ' li').index($this);
-        var $navHeight = $('.comNav').height();
+        var $navHeight = $('.com-nav').height();
         var $ulHeight = $('#' + $layer + '_' + $index_val).height();
         var space = $navHeight - $ulHeight;
-        console.log(space);
         if (space < 40) {
-            $('.comNav').height($navHeight + 40);
+            $('.com-nav').height($navHeight + 40);
         }
     })
-    .ready(function() {
 
+
+// 手機版
+
+    .on('click', '.mob-a li', function(e){
+        event.preventDefault();
+        $(this).find('.mob-b').slideToggle().end().addClass('b-on');
+        $(this).children('a').find('.off').css('display','none')
+                       .end().find('.on').show();
+    })
+
+    .on('click', '.b-on', function(){
+        $(this).children('a').find('.off').css('display','inline')
+                        .end().find('.on').css('display','none')
+        $(this).removeClass("b-on");
+    })
+
+
+    .on('click', '.mob-b li', function(e){
+        event.preventDefault();
+        $(this).find('.mob-c').slideToggle();
+
+    })
+
+    .on('click', '#nav-btn', function(){
+        $(this).toggleClass('open');
+        if( $('#nav-btn').hasClass('open') ){
+            $('.mob-nav').show();
+        }else{
+            $('.mob-nav').hide();
+        }
+    })
+
+    .ready(function() {
+         
     });
+
+

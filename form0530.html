@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form0530</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/form.js"></script>
+</head>
+<body>
+	<div>
+		<form>
+			<div>
+				<label for="username" class="label">
+					姓名
+				</label>
+			<input name="username" type="text" id="username" size="36">
+			</div>
+			<div>
+				<span class="label">興趣</span>
+			<input type="checkbox" name="hobby" id="reading" value="reading">
+				<label for="reading">閱讀</label>
+			<input type="checkbox" name="hobby" id="jogging" value="jogging">
+				<label for="jogging">慢跑</label>
+			<input type="checkbox" name="hobby" id="cooking" value="cooking">
+				<label for="cooking">烹飪</label>
+			</div>
+			<div>
+				<label for="drink" class="label">愛喝的飲料</label>
+				<select name="drink" id="drink">
+					<option>可樂</option>
+					<option>果汁</option>
+					<option>咖啡</option>
+					<option>白開水</option>
+				</select>
+			</div>
+			<div class="labelBlock">
+			你想要了解更多資訊嗎?
+			<input type="radio" name="spam" id="ok" value="ok">
+				<label for="ok">想要</label>
+			<input type="radio" name="spam" id="yes" value="yes" >
+				<label for="yes">非常想要</label>
+			</div>
+			<div>
+			<input type="submit" name="submit" id="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background: #c03546;
+    color: #492540;
+}
+
+body:nth-child(1) {
+    background: ;
+    width: 960px;
+    margin: 0 auto;
+}
+
+form {
+    background: #f6ea8c;
+    width: 70%;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+.label,
+.labelBlock {
+    padding: 5px 10px;
+}
+
+#submit {
+    background: #333;
+    color: #fff;
+    margin-left: 200px;
+}
+
+#username {
+    width: 120px;
+}
+
+.labelBlock {}
