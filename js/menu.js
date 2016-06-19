@@ -37,7 +37,7 @@ $(document)
 
 // 手機版
 
-    .on('click', '.mob-a li', function(e){
+    .on('click', '.mob-a > li', function(e){
         event.preventDefault();
         $(this).find('.mob-b').slideToggle().end().addClass('b-on');
         $(this).children('a').find('.off').css('display','none')
@@ -50,8 +50,7 @@ $(document)
         $(this).removeClass("b-on");
     })
 
-
-    .on('click', '.mob-b li', function(e){
+    .on('click', '.mob-b > li', function(e){
         event.preventDefault();
         $(this).find('.mob-c').slideToggle();
 
