@@ -36,37 +36,31 @@ $(document)
 
 
 // 手機版
-
-    .on('click', '.mob-a > li', function(e){
+    .on('click', '.mob-nav li a', function() {
         event.preventDefault();
-        $(this).find('.mob-b').slideToggle().end().addClass('b-on');
-        $(this).children('a').find('.off').css('display','none')
-                       .end().find('.on').show();
+        var $this = $(this);
+        var $ul = $this.siblings('ul');
+        if ($ul.length > 0) {
+            var $span = $this.find('span');
+            if ($span.text() === '+') {
+                var $symbol = '-';
+            } else {
+                var $symbol = '+';
+            }
+            $span.text($symbol);
+            $this.siblings('ul').slideToggle();
+        }
     })
 
-    .on('click', '.b-on', function(){
-        $(this).children('a').find('.off').css('display','inline')
-                        .end().find('.on').css('display','none')
-        $(this).removeClass("b-on");
-    })
-
-    .on('click', '.mob-b > li', function(e){
-        event.preventDefault();
-        $(this).find('.mob-c').slideToggle();
-
-    })
-
-    .on('click', '#nav-btn', function(){
+    .on('click', '#nav-btn', function() {
         $(this).toggleClass('open');
-        if( $('#nav-btn').hasClass('open') ){
+        if ($('#nav-btn').hasClass('open')) {
             $('.mob-nav').show();
-        }else{
+        } else {
             $('.mob-nav').hide();
         }
     })
 
     .ready(function() {
-         
+
     });
-
-
